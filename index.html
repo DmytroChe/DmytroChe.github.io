@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/css-awesome/font-awesome.min.css">
+</head>
+<body>
+<div id="first-window">
+    <div id="head" class="clearfix">
+        <span>
+            <i class="fa fa-search"></i>
+            <input id="search-field" placeholder="Поиск" >
+        </span>
+        <button id="add-btn" ><i class="fa fa-plus-circle"></i>Добавить контакт</button>
+    </div>
+    <div>
+        <p id="title1">Список контактов:</p>
+        <p id="title2">Результаты поиска:</p>
+        <ul id="contacts-field">
+        </ul>
+    </div>
+</div>
+<div id="edit-window">
+    <div id="name-box">
+        <p id="edit-title1">Новый контакт</p>
+        <p id="edit-title2">Редактирование контакта</p>
+        <p><input id="first-name-field" placeholder="Имя"></p>
+        <p><input id="last-name-field" placeholder="Фамилия"></p>
+    </div>
+    <div id="phone-box">
+        <p>Номера телефонов:</p>
+        <ul id="phones-field">
+        </ul>
+        <button id="add-phone-btn">Добавить номер телефона</button>
+    </div>
+    <div id="emeils-box">
+        <p>E-mail:</p>
+        <ul id="emails-field">
+        </ul>
+        <button id="add-email-btn">Добавить адресс електронной почты</button>
+    </div>
+    <div id="check-box">
+        <ul>
+            <li><button id="apply-btn"><i class="fa fa-check"></i></button></li>
+            <li><button id="tresh-btn"><i class="fa fa-trash"></i></button></li>
+            <li><button id="cancel-btn"><i class="fa fa-times"></i></button></li>
+        </ul>
+    </div>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>
