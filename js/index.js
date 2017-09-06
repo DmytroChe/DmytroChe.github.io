@@ -125,6 +125,20 @@
                 if(lastNameInput.value.length>24){
                     lastNameInput.value = lastNameInput.value.substr(0,24);}
             };
+            addLiOnWith(phonesField, "<input>");
+            let phInputField = phonesField.lastChild.lastChild;
+            phInputField.oninput = function () {
+                if (phInputField.value.length>12){phInputField.value = phInputField.value.substr(0,12);}
+                let val = phInputField.value;
+                phInputField.value = phoneCheck(val);
+            };
+            addLiOnWith(emailsField,"<input>");
+            let emInputField = emailsField.lastChild.lastChild;
+            emInputField.oninput = function () {
+                if (emInputField.value.length>36){emInputField.value = emInputField.value.substr(0,36);}
+                let eval = emInputField.value;
+                emeilCheck(eval,emInputField);
+            };
         } else {
             editTitle2.style.display = "block";
             editTitle1.style.display = "none";
@@ -144,7 +158,7 @@
                 let phInputField = phonesField.lastChild.lastChild;
                 phInputField.value = ph;
                 phInputField.oninput = function () {
-                    if (phInputField.value.length>14){phInputField.value = phInputField.value.substr(0,14);}
+                    if (phInputField.value.length>12){phInputField.value = phInputField.value.substr(0,12);}
                     let val = phInputField.value;
                     phInputField.value = phoneCheck(val);
                 };
@@ -169,7 +183,7 @@
                 addLiOnWith(phonesField, "<input>");
                 let phInputField = phonesField.lastChild.lastChild;
                 phInputField.oninput = function () {
-                    if (phInputField.value.length>14){phInputField.value = phInputField.value.substr(0,14);}
+                    if (phInputField.value.length>12){phInputField.value = phInputField.value.substr(0,12);}
                     let val = phInputField.value;
                     phInputField.value = phoneCheck(val);
                 };
@@ -178,7 +192,7 @@
             addLiOnWith(phonesField, "<input>");
             let phInputField = phonesField.lastChild.lastChild;
             phInputField.oninput = function () {
-                if (phInputField.value.length>14){phInputField.value = phInputField.value.substr(0,14);}
+                if (phInputField.value.length>12){phInputField.value = phInputField.value.substr(0,12);}
                 let val = phInputField.value;
                 phInputField.value = phoneCheck(val);
             };

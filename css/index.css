@@ -99,11 +99,16 @@ input{
     margin: 0 0 3px 0;
     padding: 2px 5px 2px 25px;
 }
-body {
-    background: linear-gradient(to bottom right, #00004d 00%, #000000 60%,#000099 100%);
+html {
+    background: linear-gradient(to bottom right, #00004d 00%, #000000 60%,#000099 100%) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     font: 600 18px/1.5 "SnowstormLight";
     letter-spacing: 2px;
     color: #bfbfff;
+    min-height: 100%;
 }
 #first-window p {
     text-align: center;
